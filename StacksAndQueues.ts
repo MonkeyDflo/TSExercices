@@ -34,15 +34,24 @@ class Queue {
         this.end = newEnd;
         return this;
     }
-    deQueue(){ // pas bon
+    deQueue(){
         let n:Node = this.end
         while(n.next != this.first){
             n = n.next
         }
-        if(n.next == this.first){ // pb ici
+        if(n.next == this.first){ 
+            n.next = null
             this.first = n
         }
         return this;
+    }
+    printAllQueue(){
+        let n:Node = this.end
+        console.log( " Print all queue ! ")
+        while(n !=null){
+            console.log(" N : " + JSON.stringify(n));
+            n=n.next;
+        }
     }
 
 }
