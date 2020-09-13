@@ -6,16 +6,16 @@ Version de type script
 Version de ts-node
 
 
-Compiler les exercices avec ts-node : 
-Pour compiler les exercices il suffit d'éxécuter la commande ts-node <nomdufichier> dans le terminal de commande
+Compiler les exercices avec ts-node :  
+Pour compiler les exercices il suffit d'éxécuter la commande ts-node <nomdufichier> dans le terminal de commande  
 lien :
   
-Compiler les exercices avec typescript : 
-Il est aussi possible de transpiler les fichiers typescript en js en ajoutant un fichier ts.config et en indiquant la version cible du javascript. 
+Compiler les exercices avec typescript :  
+Il est aussi possible de transpiler les fichiers typescript en js en ajoutant un fichier ts.config et en indiquant la version cible du javascript.  
 lien : 
 
-Débuguer avec visual studio code du typescript : 
-Pour débugguer du typescript il suffit de rajouter une option dans le fichier ts.config
+Débuguer avec visual studio code du typescript :  
+Pour débugguer du typescript il suffit de rajouter une option dans le fichier ts.config  
 lien : 
 
 # Git commands 
