@@ -12,13 +12,32 @@ class Node {
     }
     deleteANode(item:Node, d:Number):Node{
         let n:Node = item
-        while((n.next != null) && (n.next.data != d)){n=n.next}
-        if(n.next != null){
-            if(n.next.data == d){
-                n.next=n.next.next
+        if(n.data == d){
+            n = n.next
+        }else{
+            while((n.next != null) && (n.next.data != d)){n=n.next}
+            if(n.next != null){
+                if(n.next.data == d){
+                    n.next=n.next.next
+                }
             }
-        }
+        }   
         return n
+    }
+    deleteAthisNode(d:Number){
+        let n:Node = this
+        if(n.data == d){
+            n = n.next
+        }else{
+            while((n.next != null) && (n.next.data != d)){n=n.next}
+            if(n.next != null){
+                if(n.next.data == d){
+                    n.next=n.next.next
+                }
+            }
+        }   
+        this.data = n.data
+        this.next = n.next
     }
 }
 
