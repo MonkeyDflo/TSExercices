@@ -19,6 +19,11 @@ git checkout dev
 git merge LinkedLists  
 git push -> fatal: The current branch Linkedlists has no upstream branch.  
 To push the current branch and set the remote as upstream  
-git push --set-upstream origin dev  
+git push --set-upstream origin dev 
+
+Important ! 
+Lorsqu'on modifie des fichiers sur une branche, il faut committer l'intégralité des changements sur la branche puis mergé. 
+Si on modifie des fichiers sur une branche puis qu'on ne commit qu'une partie des modifications, qu'ensuite on stash les changements et qu'on se place sur une autre branche, qu'on effctue un stash pop. Nous allons avoir un problème de merge avec les fichiers concernés.
+Il faut donc impérativement lorsqu'on est sur une branche de modifier que les fichiers qui font sens et qu'on va ensuite commit sur cette branche (ex une feature) puis ensuite la merger sur la branche parente. 
 
 
