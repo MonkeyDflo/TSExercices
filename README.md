@@ -8,15 +8,20 @@ Version de ts-node
 
 Compiler les exercices avec ts-node :  
 Pour compiler les exercices il suffit d'éxécuter la commande ts-node <nomdufichier> dans le terminal de commande  
-lien :
+lien : https://www.npmjs.com/package/ts-node
   
 Compiler les exercices avec typescript :  
 Il est aussi possible de transpiler les fichiers typescript en js en ajoutant un fichier ts.config et en indiquant la version cible du javascript.  
-lien : 
+lien : https://code.visualstudio.com/docs/typescript/typescript-compiling
+tsc helloworld.ts
+node helloworld.js
 
 Débuguer avec visual studio code du typescript :  
 Pour débugguer du typescript il suffit de rajouter une option dans le fichier ts.config  
-lien : 
+lien : https://code.visualstudio.com/docs/typescript/typescript-debugging
+https://code.visualstudio.com/docs/typescript/typescript-compiling
+
+With helloworld.ts open in the editor, press F5. If you have other debugger extensions installed (such as the Chrome Debug extension), you need to select Node.js from the dropdown.
 
 # Git commands 
 Permet aussi de pratiquer l'organisation des branches sur git 
