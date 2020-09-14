@@ -25,7 +25,7 @@ class Node {
         return n
     }
     /* Correction Cracking the code interview*/
-    deleteNode(head:Node, d:Number){
+    deleteNode(head:Node, d:Number):Node{
         let n:Node = head;
         if(n.data==d){
             return head.next; /* Moved head*/ 
@@ -52,6 +52,7 @@ class Node {
         }   
         this.data = n.data
         this.next = n.next
+        console.log("this : " + JSON.stringify(this))
     }
 }
 
