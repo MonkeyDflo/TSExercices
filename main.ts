@@ -4,6 +4,7 @@ import {Stack, Queue} from "./StacksAndQueues"
 
 // linked lists fundamentals
 /*
+
 const Noeud = new Node(1);
 Noeud.appendToTail(2);
 Noeud.appendToTail(3);
@@ -11,7 +12,12 @@ Noeud.deleteANode(Noeud, 3);
 Noeud.deleteANode(Noeud, 3);
 console.log(Noeud)
 
-*/
+
+//Noeud.deleteANode(Noeud, 3);
+//Noeud.deleteANode(Noeud, 3);
+console.log(Noeud.deleteANode(Noeud, 1));
+Noeud.deleteAthisNode(1);
+console.log(Noeud);*/
 
 // Stacks and Queues fundamentals
 /*
@@ -39,7 +45,6 @@ Queux.printAllQueue()
 Queux.deQueue()
 Queux.printAllQueue()
 */
-
 
 console.log(Queux.addToTheQueue(2));
 console.log(Queux.addToTheQueue(3));
