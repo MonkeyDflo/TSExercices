@@ -25,20 +25,16 @@ import {Node} from "./../LinkedLists"
 
 function DeleteLinkedListDuplicate(head: Node): Node{
     let n:Node = head
-    //while globale
     while(n.next != null){
-        // 2nd while
+        console.log(JSON.stringify(n.next));
         let buff:number = n.data
-        // à voir let m:Node = head // on pourrait peut etre le mettre égale à n, m serait plus restreint
-        //let m:Node = n;
-        let m = new Node(1)
+        let m:Node = n.next;
         while(m.next != null){
             if(buff == m.data){
-                m.deleteAthisNode(buff) // va supprimer le 1er == data qu'il rencontre
+                head.deleteAthisNode(buff)
             }
             m = m.next;
-        }
-        n = m; // On a supprimer de m tous les doublons
+        } 
         n = n.next;
     }
     return head;
@@ -48,5 +44,4 @@ const test1 = new Node(1)
 test1.appendToTail(2);
 test1.appendToTail(2);
 test1.appendToTail(3);
-console.log(test1);
 console.log(DeleteLinkedListDuplicate(test1));
