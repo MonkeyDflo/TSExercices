@@ -45,3 +45,5 @@ test1.appendToTail(2);
 test1.appendToTail(2);
 test1.appendToTail(3);
 console.log(DeleteLinkedListDuplicate(test1));
+
+export {DeleteLinkedListDuplicate} 
